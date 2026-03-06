@@ -98,10 +98,3 @@ erDiagram
         nvarchar Owner
     }
 ```
-
-## Next Steps
-
-- [Quickstart 2](../quickstart2/) — Replace SQL Auth with Managed Identity
-- [Quickstart 3](../quickstart3/) — Set up Entra ID auth infrastructure on the API
-- [Quickstart 4](../quickstart4/) — Add user login and per-user DAB policy filtering
-- [Quickstart 5](../quickstart5/) — Move enforcement into SQL with Row-Level Security
