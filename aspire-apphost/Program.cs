@@ -49,7 +49,7 @@ var apiServer = builder
     .WithOtlpExporter()
     .WithParentRelationship(sqlDatabase)
     .WithHttpHealthCheck("/health")
-    .WaitFor(sqlDatabaseProject);
+    .WaitForCompletion(sqlDatabaseProject);
 
 var sqlCommander = builder
     .AddContainer(options.SqlCmdr, "jerrynixon/sql-commander", options.SqlCmdrImage)
@@ -63,7 +63,7 @@ var sqlCommander = builder
     })
     .WithParentRelationship(sqlDatabase)
     .WithHttpHealthCheck("/health")
-    .WaitFor(sqlDatabaseProject);
+    .WaitForCompletion(sqlDatabaseProject);
 
 var webApp = builder
     .AddContainer(options.WebApp, "nginx", "alpine")
