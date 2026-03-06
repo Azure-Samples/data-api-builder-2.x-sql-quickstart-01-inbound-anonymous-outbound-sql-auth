@@ -98,3 +98,13 @@ erDiagram
         nvarchar Owner
     }
 ```
+
+## Related Quickstarts
+
+| Quickstart | Inbound | Outbound | Security |
+|------------|---------|----------|----------|
+| **This repo** | Anonymous | SQL Auth | — |
+| [Quickstart 2](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-02-inbound-anonymous-outbound-managed-identity) | Anonymous | Managed Identity | — |
+| [Quickstart 3](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-03-inbound-entraid-outbound-managed-identity) | Entra ID | Managed Identity | — |
+| [Quickstart 4](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-04-inbound-entraid-outbound-managed-identity-api-rls) | Entra ID | Managed Identity | API RLS |
+| [Quickstart 5](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-05-inbound-entraid-outbound-managed-identity-db-rls) | Entra ID | Managed Identity | DB RLS |
